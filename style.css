@@ -360,7 +360,8 @@ body {
     width:72px;
     height:72px;
     object-fit: cover;
-}
-.accounts>a>img{
     cursor: pointer;
+}
+.accounts>a>img:hover{
+    transform: scale(0.9);
 }

@@ -1,0 +1,187 @@
+:root {
+    --primary: #101820;
+    --secondary: #84C4C0;
+    --action: #E08DAC;
+    --line: #EF3D29;
+    --row: 3;
+    --col: 3;
+}
+
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+@font-face {
+    font-family: JosefinSans;
+    src: url(fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Mogra;
+    src: url(fonts/Mogra-Regular.ttf);
+}
+
+@font-face {
+    font-family: Myanmar;
+    src: url(fonts/MyanmarSansPro-Regular.ttf);
+}
+
+
+
+
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    width: 100;
+    height: 100%;
+    font-family: JosefinSans;
+
+}
+
+body {
+    background-color: var(--primary);
+    font-family: Myanmar;
+    overflow: hidden;
+
+}
+
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-gap: 90px;
+    grid-template-columns: repeat(var(--col), 1fr);
+    grid-template-rows: repeat(var(--row), 1fr);
+    padding: 5vh 5vw;
+}
+
+.img {
+    grid-row: 2 span;
+    grid-column: 2 span;
+    background-size: cover;
+    border-radius: 18px;
+
+}
+
+.buy {
+    padding: 10px;
+    grid-row: 2 span;
+    background-color: var(--secondary);
+    border-radius: 18px;
+}
+
+.buy>ul {
+    font-size: 24px;
+}
+
+.ccard {
+    background: linear-gradient(to left bottom, #90274F 0%, #E08DAC 100%);
+    width: 80%;
+    height: 100%;
+    position: relative;
+    border-radius:18px;
+    text-shadow: 0px 5px 30px  var(--secondary);
+    padding:0px 20px 20px 20px;
+}
+
+
+.buy>.ccardCenter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.balls {
+    display:inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.ball {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary);
+    border-radius:100%;
+    float: left;
+}
+.ball:nth-child(2){
+    background-color: var(--secondary);
+    margin-left: -16px;
+}
+
+.fee{
+margin-left:10px;
+}
+
+.buybtn{
+    background-color: var(--primary);
+    color: var(--secondary);
+    width: 120px ;
+    height: 40px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 16pt;
+    position: relative;
+}
+
+.buybtn::after {
+    content: "Onayla";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 16pt;
+    opacity: 0;
+    transition: opacity 0.2s linear 0s;
+
+}
+
+.buybtn:hover::after {
+    opacity: 1;
+}
+
+
+
+.comments {
+    grid-column: 3 span;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.comment{
+    width:28%;
+    height:100%;
+    background-color: var(--secondary);
+    border-radius:18px;
+    padding:0px 2%;
+    position: relative;
+}
+.comment>.text{
+    font-size: 16pt;
+}
+
+.comment>.stars{
+    position: absolute;
+    font-size: 28pt;
+    color: var(--primary);
+    top:0px;
+    right:10px;
+}

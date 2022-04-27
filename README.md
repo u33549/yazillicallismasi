@@ -1,0 +1,2 @@
+# yazillicallismasi
+Yazılı Kodları

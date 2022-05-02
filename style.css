@@ -114,8 +114,8 @@ body {
 .profile>.avatar {
     background-image: url(imgs/avatar.png);
     background-size: 100%;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     margin-top: 12pt;
 }
 
